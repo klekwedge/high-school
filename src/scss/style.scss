@@ -1,14 +1,14 @@
 @import "./modules/_nullstyle";
 @import "./modules/_anim-scroll";
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
 /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 body {
-
+  font-family: "Raleway", sans-serif;
 }
 
 body._lock {
@@ -36,6 +36,11 @@ body._lock {
   font-size: 32px;
   line-height: 48px;
   text-align: center;
+  margin: 0 auto;
+}
+
+._highlight {
+  color: #0ebed9;
 }
 
 ._subtitle {
@@ -79,13 +84,15 @@ body._lock {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px 15px;
+    gap: 0px 20px;
   }
 
   & h1 {
     font-weight: 700;
-    font-size: 30px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   &__body {
@@ -120,14 +127,11 @@ body._lock {
   flex-wrap: wrap;
   gap: 20px 20px;
 }
-
 .menu__link {
   font-size: 16px;
   line-height: 28px;
 
-  color: #ffffff;
-  &:hover {
-  }
+  color: black;
 }
 
 /*-------------------------------------------------------------*/
@@ -237,6 +241,81 @@ body._lock {
 
   .menu__link {
     font-size: 35px;
+  }
+}
+
+/*-------------------------------------------------------------*/
+/*-----About---------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__about {
+  margin-bottom: 100px;
+}
+
+.about {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px 50px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 120px;
+  }
+
+  &__text {
+    max-width: 500px;
+  }
+
+  &__title {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    max-width: 690px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    max-width: 690px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #444444;
+    margin-bottom: 60px;
+  }
+
+  &__heading {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #0ebed9;
+    margin-bottom: 30px;
+  }
+
+  &__paragraph {
+    font-size: 18px;
+    line-height: 32px;
+    color: #444444;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 430px;
+  }
+
+  &__image {
+    width: 100%;
   }
 }
 
