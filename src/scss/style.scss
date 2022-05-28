@@ -753,6 +753,221 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
+/*-----Stories-------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__stories {
+  margin-bottom: 200px;
+}
+
+.stories {
+  background: linear-gradient(101.72deg, #07085b 0%, #0c0c50 98.53%);
+
+  &__container {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 45px;
+  }
+
+  &__vector {
+    position: absolute;
+
+    &.vector__bottom_1 {
+      left: -100px;
+      bottom: -150px;
+    }
+
+    &.vector__bottom_2 {
+      left: -250px;
+      bottom: -150px;
+    }
+
+    &.vector__top_1 {
+      right: -100px;
+      top: -100px;
+    }
+
+    &.vector__top_2 {
+      right: -250px;
+      top: -90px;
+    }
+  }
+
+  &__student {
+    position: absolute;
+    z-index: 2;
+    &.student__left-top {
+      top: 80px;
+      left: 40px;
+      width: 82px;
+      height: 82px;
+    }
+
+    &.student__left-middle {
+      top: 360px;
+      left: 70px;
+      width: 134px;
+      height: 134px;
+    }
+
+    &.student__left-bottom {
+      top: 850px;
+      left: 50px;
+      width: 82px;
+      height: 82px;
+    }
+
+    &.student__right-top {
+      top: 150px;
+      right: -50px;
+      width: 82px;
+      height: 82px;
+    }
+    &.student__right-bottom {
+      top: 760px;
+      right: 50px;
+      width: 82px;
+      height: 82px;
+    }
+  }
+  &__star {
+    position: absolute;
+    &:nth-of-type(8) {
+      left: -50px;
+      top: 100px;
+    }
+
+    &:nth-of-type(9) {
+      left: 200px;
+      bottom: 200px;
+    }
+
+    &:nth-of-type(10) {
+      right: 100px;
+      bottom: 100px;
+    }
+
+    &:nth-of-type(11) {
+      right: 400px;
+      bottom: 130px;
+    }
+
+    &:nth-of-type(12) {
+      right: 320px;
+      top: 60px;
+    }
+
+    &:nth-of-type(13) {
+      right: -50px;
+      bottom: 280px;
+    }
+
+    &:nth-of-type(14) {
+      left: -130px;
+      bottom: 350px;
+    }
+
+    &:nth-of-type(15) {
+      right: 100px;
+      top: 280px;
+    }
+  }
+
+  &__quote {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 15px;
+  }
+
+  &__paragraph {
+    max-width: 800px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+
+    margin-bottom: 65px;
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    position: relative;
+    z-index: 2;
+    max-width: 675px;
+    background: #1b1c63;
+    box-shadow: 0px 6px 60px 1px rgba(19, 19, 19, 0.3);
+    border-radius: 10px;
+    padding: 28px 30px 35px 60px;
+
+    .story__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .story__paragraph {
+      font-size: 16px;
+      line-height: 26px;
+      color: #ffffff;
+      max-width: 580px;
+    }
+
+    .story__num {
+      position: absolute;
+      left: 20px;
+      top: 30px;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 18px;
+      color: #0ebed9;
+    }
+
+    .story__show {
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  &__name {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+/*-------------------------------------------------------------*/
 /*-----Step----------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
@@ -944,7 +1159,6 @@ body._lock {
       left: -250px;
       bottom: -150px;
     }
-
   }
 
   &__star {
